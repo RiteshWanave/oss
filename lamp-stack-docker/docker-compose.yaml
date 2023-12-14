@@ -2,9 +2,7 @@ version: '3'
 
 services:
   lamp-app:
-    build:
-      context: .
-    image: my-lamp-app
+    build: .
     ports:
       - "8080:80"
     depends_on:
